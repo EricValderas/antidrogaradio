@@ -29,6 +29,7 @@ export const activemindstt = [
          "sftp://su35864@access-5018990099.webspace-host.com/Web/P/Active%20Minds/Things%20That%20Cannot%20Be%20Unseen/11%20Active%20Minds%20-%20Shamima.mp3",
       ]  
       ,[
+        
        "sftp://su35864@access-5018990099.webspace-host.com/Web/Img/activemindsthingsthat.jpg",
        "sftp://su35864@access-5018990099.webspace-host.com/Web/Img/activemindsthingsthat.jpg",
        "sftp://su35864@access-5018990099.webspace-host.com/Web/Img/activemindsthingsthat.jpg",
