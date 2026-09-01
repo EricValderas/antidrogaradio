@@ -1,15 +1,10 @@
 
 
-var audio = document.getElementById("myAudio");
-const audioElement = document.querySelector("audio");
-
-
- function togglePlay() {
-      if (audio.paused) {
-        audio.play();
-      } else {
-        audio.pause();
-      }
+var song = document.getElementById("myAudio");
+  function togglePlay() {
+    if (song.paused) {
+      song.play();
+    } else {
+      song.pause();
     }
-
-
+  }
