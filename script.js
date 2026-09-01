@@ -1,6 +1,6 @@
 import { activemindstt } from './Discos/activemindstt.js';
 
-var song = document.getElementById("mySong");
+var audio = document.getElementById("mySong");
 const audioElement = document.querySelector("audio");
 
 
