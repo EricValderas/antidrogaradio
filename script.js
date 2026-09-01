@@ -1,6 +1,6 @@
 
 
-var audio = document.getElementById("mySong");
+var audio = document.getElementById("myAudio");
 const audioElement = document.querySelector("audio");
 
 
