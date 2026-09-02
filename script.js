@@ -21,8 +21,7 @@ let randomNumber = 0;
 
 
     if (song.paused) {
-    audioElement.src=chambacu[1][3];
-      song.play();
+      BluesFunction();
     } else {
       song.pause();
     }
