@@ -31,7 +31,7 @@ let randomNumber = 0;
 
    function BluesFunction(){
   
-          randomScript = Math.floor(Math.random()*3);
+          randomScript = Math.floor(Math.random()*4);
 
           
           if(randomScript==0)
@@ -81,11 +81,7 @@ let randomNumber = 0;
                    
            
           }
-
-      
-          
-  
-        
+     
             if(randomScript==2)
           {
             arrayTitle=chambacu;
@@ -105,6 +101,24 @@ let randomNumber = 0;
             //Portada.src = stringReplaceImage;
   
           }
+
+           if(randomScript==3)
+                  {
+                    randomNumber = Math.floor(Math.random()*jambuAmazonia[0].length);
+                    navigator.mediaSession.metadata = new MediaMetadata({
+                    title: jambuAmazonia[0][randomNumber],
+                    artist: "Nervous Wreck Radio - World",
+                    album: "",
+                    artwork: [{ src: jambuAmazonia[2][randomNumber] }],
+                    
+                  });
+                    audioElement.src= jambuAmazonia[1][randomNumber];
+                    audioElement.play();
+                    document.title = jambuAmazonia[0][randomNumber];
+                    //priceDesc.innerHTML = jambuAmazonia[0][randomNumber];
+                    //Portada.src = stringReplaceImage;
+          
+                  }
   
             
         }
@@ -199,16 +213,16 @@ let randomNumber = 0;
        
            // Mynyo Crusaders - Echoes
 
-        "https://nervouswreckradio.online/P/Mynyo%20Crusaders%20-%20Echoes%20of%20Japan/echoes-of-japan-minyo-crusaders.mp3",
-        "https://nervouswreckradio.online/P/Mynyo%20Crusaders%20-%20Echoes%20of%20Japan/echoes-of-japan-minyo-crusaders%20%281%29.mp3",
-        "https://nervouswreckradio.online/P/Mynyo%20Crusaders%20-%20Echoes%20of%20Japan/echoes-of-japan-minyo-crusaders%20%282%29.mp3",
-        "https://nervouswreckradio.online/P/Mynyo%20Crusaders%20-%20Echoes%20of%20Japan/echoes-of-japan-minyo-crusaders%20%283%29.mp3",
-        "https://nervouswreckradio.online/P/Mynyo%20Crusaders%20-%20Echoes%20of%20Japan/echoes-of-japan-minyo-crusaders%20%284%29.mp3",
-        "https://nervouswreckradio.online/P/Mynyo%20Crusaders%20-%20Echoes%20of%20Japan/echoes-of-japan-minyo-crusaders%20%285%29.mp3",
-        "https://nervouswreckradio.online/P/Mynyo%20Crusaders%20-%20Echoes%20of%20Japan/echoes-of-japan-minyo-crusaders%20%286%29.mp3",
-        "https://nervouswreckradio.online/P/Mynyo%20Crusaders%20-%20Echoes%20of%20Japan/echoes-of-japan-minyo-crusaders%20%287%29.mp3",
-        "https://nervouswreckradio.online/P/Mynyo%20Crusaders%20-%20Echoes%20of%20Japan/echoes-of-japan-minyo-crusaders%20%288%29.mp3",
-        "https://nervouswreckradio.online/P/Mynyo%20Crusaders%20-%20Echoes%20of%20Japan/echoes-of-japan-minyo-crusaders%20%289%29.mp3",
+        "https://www.dropbox.com/scl/fi/x34ifg0uf1sms2ltf9pew/01-minyo-crusaders-Kushimoto-Bushi-Cumbia.mp3?rlkey=zykei7eydsf99wttem0p0u8p7&st=dkmamsx0&dl=1",
+        "https://www.dropbox.com/scl/fi/8ftm1h024zbmeoz12uchy/02-minyo-crusaders-Hohai-Bushi-Afro.mp3?rlkey=njbsefxogely3ozvydblryoe0&st=nywwfpzz&dl=1",
+        "https://www.dropbox.com/scl/fi/r7imi25cnubqpea8poiej/03-minyo-crusaders-Otemoyan-Reggae.mp3?rlkey=vq9t4ey22i83l0bngui6mfqps&st=sg7caxc6&dl=1",
+        "https://www.dropbox.com/scl/fi/euxegnf9c205s8odsk1nk/04-minyo-crusaders-Mamurogawa-Ondo-Beguine.mp3?rlkey=mjtrv0haanlr8klkwwp9wjkaj&st=62z1zc1f&dl=1",
+        "https://www.dropbox.com/scl/fi/y4hpueqeiexinra1bzxkt/05-minyo-crusaders-Yasugi-Bushi-Bolero.mp3?rlkey=vhzynmb63ttblb75b9fmjt5ir&st=cb1ewin0&dl=1",
+        "https://www.dropbox.com/scl/fi/ni199b4smsbux6zpirc0p/06-minyo-crusaders-Akita-Nikata-Bushi-Ethiopian-Groove.mp3?rlkey=ndt5go0fcszeg6ykeuyy4zcln&st=oa8o7iay&dl=1",
+        "https://www.dropbox.com/scl/fi/5cx6bwi6ld46rlb5ifs0s/07-minyo-crusaders-Toichin-Bushi-Afro-funk.mp3?rlkey=su4xt4hkqvqmr6i0g8qejqpk1&st=41lqqfxp&dl=1",
+        "https://www.dropbox.com/scl/fi/sn7no1zaldr7dqb6ujgj8/08-minyo-crusaders-Tanko-Bushi-Boogaloo.mp3?rlkey=wss4m7rfcgbcer3waygayloir&st=pla0xekl&dl=1",
+        "https://www.dropbox.com/scl/fi/0bz07tpz0qzvcwv95bbqm/09-minyo-crusaders-Aizu-Bandaisan-Latin.mp3?rlkey=gxdsn6r26hx483h6l9kuuut04&st=nqpo2wf5&dl=1",
+        "https://www.dropbox.com/scl/fi/p8i9ox6ymmgnm97zopon1/10-minyo-crusaders-Sumo-Jinku-A-capella.mp3?rlkey=7fwzeakoqdjg0wexgdoep6ej2&st=velrsm4i&dl=1",
 
         "https://nervouswreckradio.online/P/%C2%A1Dale%20Duro%20al%20Bombo%21%20-%20%20Ruca%20%26%20El%20Quinde%20de%20Barbacoas/BandCampDownloader.app%20-%20A%20ritmo%20de%20caramba%20-%20Ruca%20_%20El%20Quinde%20de%20Barbacoas.mp3",
         "https://nervouswreckradio.online/P/%C2%A1Dale%20Duro%20al%20Bombo%21%20-%20%20Ruca%20%26%20El%20Quinde%20de%20Barbacoas/BandCampDownloader.app%20-%20Africa%20negra%20-%20Ruca%20_%20El%20Quinde%20de%20Barbacoas.mp3",
@@ -307,5 +321,78 @@ let randomNumber = 0;
         
       ] 
       ];
+
+      const jambuAmazonia = [
+        [
+            "Lundun da yaya - Grupo da pesada",
+            "Võa Andorinha - Grupo da pesada",
+            "Janjão - Meu Barquinho",
+            "Magalhães e Sua Guitarra - Xangô",
+            "Messias Holanda - Carimbó Da Pimenta",
+
+            "Messias Holanda - O Galo Canta, O Macaco Assovia",
+            "Mestre Cupijó e Seu Ritmo - Despedida",
+            "O Conjunto De Orlando Pereira - Carimbó Para Yemanjá",
+            "O Conjunto De Orlando Pereira - Maruda",
+            "Os Muiraquitãns - A Misturada",
+
+            "Os Quentes de Terra Alta - Praia Do Algodoal",
+            "Pinduca - Coco Da Bahia",
+            "Pinduca - Pai Xangô",
+            "Pinduca - Vamos Farrear",
+            "Verequete e O Conjunto Uirapurú - Da Garrafa uma pinga",
+
+            "Verequete e O Conjunto Uirapurú - Mambo Assanhado",
+            "Vieira e Seu Conjunto - Lambada Da Baleia",
+            "Vieira e Seu Conjunto - Melô Do Bode",
+        ],
+        [
+            "https://www.dropbox.com/scl/fi/r3fls0st0zfisz7tq40go/grupo-da-pesada-lundun-da-yaya.mp3?rlkey=wckki35odhqmhjykl8f8x62mw&st=4ppvw5qm&dl=1",
+            "https://www.dropbox.com/scl/fi/r3fls0st0zfisz7tq40go/grupo-da-pesada-lundun-da-yaya.mp3?rlkey=wckki35odhqmhjykl8f8x62mw&st=4ppvw5qm&dl=1",
+            "https://www.dropbox.com/scl/fi/r3fls0st0zfisz7tq40go/grupo-da-pesada-lundun-da-yaya.mp3?rlkey=wckki35odhqmhjykl8f8x62mw&st=4ppvw5qm&dl=1",
+            "https://www.dropbox.com/scl/fi/r3fls0st0zfisz7tq40go/grupo-da-pesada-lundun-da-yaya.mp3?rlkey=wckki35odhqmhjykl8f8x62mw&st=4ppvw5qm&dl=1",
+            "https://www.dropbox.com/scl/fi/r3fls0st0zfisz7tq40go/grupo-da-pesada-lundun-da-yaya.mp3?rlkey=wckki35odhqmhjykl8f8x62mw&st=4ppvw5qm&dl=1",
+
+            "https://www.dropbox.com/scl/fi/r3fls0st0zfisz7tq40go/grupo-da-pesada-lundun-da-yaya.mp3?rlkey=wckki35odhqmhjykl8f8x62mw&st=4ppvw5qm&dl=1",
+            "https://www.dropbox.com/scl/fi/r3fls0st0zfisz7tq40go/grupo-da-pesada-lundun-da-yaya.mp3?rlkey=wckki35odhqmhjykl8f8x62mw&st=4ppvw5qm&dl=1",
+            "https://www.dropbox.com/scl/fi/r3fls0st0zfisz7tq40go/grupo-da-pesada-lundun-da-yaya.mp3?rlkey=wckki35odhqmhjykl8f8x62mw&st=4ppvw5qm&dl=1",
+            "https://www.dropbox.com/scl/fi/r3fls0st0zfisz7tq40go/grupo-da-pesada-lundun-da-yaya.mp3?rlkey=wckki35odhqmhjykl8f8x62mw&st=4ppvw5qm&dl=1",
+            "https://www.dropbox.com/scl/fi/r3fls0st0zfisz7tq40go/grupo-da-pesada-lundun-da-yaya.mp3?rlkey=wckki35odhqmhjykl8f8x62mw&st=4ppvw5qm&dl=1",
+           
+
+            "https://www.dropbox.com/scl/fi/r3fls0st0zfisz7tq40go/grupo-da-pesada-lundun-da-yaya.mp3?rlkey=wckki35odhqmhjykl8f8x62mw&st=4ppvw5qm&dl=1",
+            "https://www.dropbox.com/scl/fi/r3fls0st0zfisz7tq40go/grupo-da-pesada-lundun-da-yaya.mp3?rlkey=wckki35odhqmhjykl8f8x62mw&st=4ppvw5qm&dl=1",
+            "https://www.dropbox.com/scl/fi/r3fls0st0zfisz7tq40go/grupo-da-pesada-lundun-da-yaya.mp3?rlkey=wckki35odhqmhjykl8f8x62mw&st=4ppvw5qm&dl=1",
+            "https://www.dropbox.com/scl/fi/r3fls0st0zfisz7tq40go/grupo-da-pesada-lundun-da-yaya.mp3?rlkey=wckki35odhqmhjykl8f8x62mw&st=4ppvw5qm&dl=1",
+            "https://www.dropbox.com/scl/fi/r3fls0st0zfisz7tq40go/grupo-da-pesada-lundun-da-yaya.mp3?rlkey=wckki35odhqmhjykl8f8x62mw&st=4ppvw5qm&dl=1",
+
+            "https://www.dropbox.com/scl/fi/r3fls0st0zfisz7tq40go/grupo-da-pesada-lundun-da-yaya.mp3?rlkey=wckki35odhqmhjykl8f8x62mw&st=4ppvw5qm&dl=1",
+            "https://www.dropbox.com/scl/fi/r3fls0st0zfisz7tq40go/grupo-da-pesada-lundun-da-yaya.mp3?rlkey=wckki35odhqmhjykl8f8x62mw&st=4ppvw5qm&dl=1",
+            "https://www.dropbox.com/scl/fi/r3fls0st0zfisz7tq40go/grupo-da-pesada-lundun-da-yaya.mp3?rlkey=wckki35odhqmhjykl8f8x62mw&st=4ppvw5qm&dl=1",
+        ],
+        [
+            "sftp://su35864@access-5018990099.webspace-host.com/Web/Img/jambuAmazonia.jpg",
+            "sftp://su35864@access-5018990099.webspace-host.com/Web/Img/jambuAmazonia.jpg",
+            "sftp://su35864@access-5018990099.webspace-host.com/Web/Img/jambuAmazonia.jpg",
+            "sftp://su35864@access-5018990099.webspace-host.com/Web/Img/jambuAmazonia.jpg",
+            "sftp://su35864@access-5018990099.webspace-host.com/Web/Img/jambuAmazonia.jpg",
+
+            "sftp://su35864@access-5018990099.webspace-host.com/Web/Img/jambuAmazonia.jpg",
+            "sftp://su35864@access-5018990099.webspace-host.com/Web/Img/jambuAmazonia.jpg",
+            "sftp://su35864@access-5018990099.webspace-host.com/Web/Img/jambuAmazonia.jpg",
+            "sftp://su35864@access-5018990099.webspace-host.com/Web/Img/jambuAmazonia.jpg",
+            "sftp://su35864@access-5018990099.webspace-host.com/Web/Img/jambuAmazonia.jpg",
+
+            "sftp://su35864@access-5018990099.webspace-host.com/Web/Img/jambuAmazonia.jpg",
+            "sftp://su35864@access-5018990099.webspace-host.com/Web/Img/jambuAmazonia.jpg",
+            "sftp://su35864@access-5018990099.webspace-host.com/Web/Img/jambuAmazonia.jpg",
+            "sftp://su35864@access-5018990099.webspace-host.com/Web/Img/jambuAmazonia.jpg",
+            "sftp://su35864@access-5018990099.webspace-host.com/Web/Img/jambuAmazonia.jpg",
+            
+            "sftp://su35864@access-5018990099.webspace-host.com/Web/Img/jambuAmazonia.jpg",
+            "sftp://su35864@access-5018990099.webspace-host.com/Web/Img/jambuAmazonia.jpg",
+            "sftp://su35864@access-5018990099.webspace-host.com/Web/Img/jambuAmazonia.jpg",
+        ],
+];
 
 
