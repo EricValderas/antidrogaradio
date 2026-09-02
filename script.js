@@ -32,7 +32,7 @@ let randomNumber = 0;
 
    function BluesFunction(){
   
-          randomScript = Math.floor(Math.random()*2);
+          randomScript = Math.floor(Math.random()*3);
 
           
           if(randomScript==0)
@@ -56,10 +56,38 @@ let randomNumber = 0;
                     
           
                   }
+
+      
+                  
+          if(randomScript==1)
+                   {
+                     randomNumber = Math.floor(Math.random()*dancingDevilsDjibuti[0].length);
+                     navigator.mediaSession.metadata = new MediaMetadata({
+                     title: dancingDevilsDjibuti[0][randomNumber],
+                     artist: "Nervous Wreck Radio - Word",
+                     album: "",
+                     artwork: [{ src: dancingDevilsDjibuti[2][randomNumber] }],
+                     
+                   });
+           
+                     
+                     audioElement.src= dancingDevilsDjibuti[1][randomNumber];
+                     audioElement.play();
+                     document.title = dancingDevilsDjibuti[0][randomNumber];
+                    // priceDesc.innerHTML = dancingDevilsDjibuti[0][randomNumber];
+                    // Portada.src = dancingDevilsDjibuti[2][randomNumber];
+                    // nota.innerHTML = "9 / 10";
+                     
+           
+                   
+           
+          }
+
+      
           
   
         
-            if(randomScript==1)
+            if(randomScript==2)
           {
             arrayTitle=chambacu;
             randomNumber = Math.floor(Math.random()*arrayTitle[0].length);
@@ -239,4 +267,46 @@ let randomNumber = 0;
 
         ]
       ];
+
+      const dancingDevilsDjibuti= [
+        [
+         "Alto's Interlude - Groupe RTD",
+         "Asma Omar - Buuraha U Dheer",
+         "Asma Omar - Raga Kaan Ka'Eegtow",
+         "Danse Tradiotionnelle - Wiil Wille",
+        "Guessod Abdo Hamargod - Kuusha Caarey",
+        "Guessod Abdo Hamargod- liso Daymo",
+        "Hasan Omar Housein - Uurkan Kaadonaya",
+        "Hassan Omar Housein - Halkaasad Dhigi Magtiisa",
+        "Hassan Omar Housein - Raani",
+        "Hassan Omar Housein - Suuban",
+        ],[
+       
+    "https://nervouswreckradio.online/P/DancingDevils/Alto's Interlude.mp3",
+    "https://nervouswreckradio.online/P/DancingDevils/Asma Omar - Buuraha U Dheer.mp3",
+    "https://nervouswreckradio.online/P/DancingDevils/Asma Omar - Raga Kaan Ka'Eegtow.mp3",
+    "https://nervouswreckradio.online/P/DancingDevils/Danse Tradiotionnelle - Wiil Wille.mp3",
+    "https://nervouswreckradio.online/P/DancingDevils/Guessod Abdo Hamargod - Kuusha Caarey .mp3",
+    "https://nervouswreckradio.online/P/DancingDevils/Guessod Abdo Hamargod- liso Daymo.mp3",
+    "https://nervouswreckradio.online/P/DancingDevils/Hasan Omar Housein - Uurkan Kaadonaya .mp3",
+    "https://nervouswreckradio.online/P/DancingDevils/Hassan Omar Housein - Halkaasad Dhigi Magtiisa.mp3",
+    "https://nervouswreckradio.online/P/DancingDevils/Hassan Omar Housein - Raani.mp3",
+    "https://nervouswreckradio.online/P/DancingDevils/Hassan Omar Housein - Suuban.mp3",
+         
+      ] 
+      ,[
+        "https://nervouswreckradio.online/Img/dancingdevils.jpeg",
+        "https://nervouswreckradio.online/Img/dancingdevils.jpeg",
+        "https://nervouswreckradio.online/Img/dancingdevils.jpeg",
+        "https://nervouswreckradio.online/Img/dancingdevils.jpeg",
+        "https://nervouswreckradio.online/Img/dancingdevils.jpeg",
+        "https://nervouswreckradio.online/Img/dancingdevils.jpeg",
+        "https://nervouswreckradio.online/Img/dancingdevils.jpeg",
+        "https://nervouswreckradio.online/Img/dancingdevils.jpeg",
+        "https://nervouswreckradio.online/Img/dancingdevils.jpeg",
+        "https://nervouswreckradio.online/Img/dancingdevils.jpeg",
+        
+      ] 
+      ];
+
 
