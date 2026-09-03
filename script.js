@@ -428,6 +428,46 @@ function functionNext(){
 
 //Disco7
 
+const maratonico = [
+    [
+        
+        "Cangrejeando en el apocalipsis - La Sonora Mazurén",
+        "Cumbia de mochila - La Sonora Mazurén",
+        "Cumbia Indigena - La Sonora Mazurén",
+        "El 4 y el 5 - La Sonora Mazurén",
+        "El zambito rumbero - La Sonora Mazurén",
+        "Intro - La Sonora Mazurén",
+        "Tiro al blanco - La Sonora Mazurén",
+        "Todos juntos - La Sonora Mazurén",
+        "Vida Mía Corazón - La Sonora Mazurén",
+    ],
+    [
+        
+        "https://www.dropbox.com/scl/fi/e3w2iyxaiqfxl2mxzqkxt/03-La-Sonora-Mazur-n-La-Sonora-Mazur-n-Cangrejeando-en-el-apocal-psis.mp3?rlkey=fudq2r3b2vy7ya4ljqw8b6qnu&st=mv21mkjv&dl=1",
+        "https://www.dropbox.com/scl/fi/gk6fa6rji16a1hmy4pfas/07-La-Sonora-Mazur-n-Cumbia-de-Mochila.mp3?rlkey=34k6i3c52e36h961bpox94cky&st=cm5x5l9r&dl=1",
+        "https://www.dropbox.com/scl/fi/loz0tp0t2xih1v9edezal/09-La-Sonora-Mazur-n-La-Sonora-Mazur-n-Cumbia-Ind-gena.mp3?rlkey=zz2utlb3py34ngltasxqqdnvb&st=y46u9g2y&dl=1",
+        "https://www.dropbox.com/scl/fi/lluo900v8db727m9qwdt4/05-La-Sonora-Mazur-n-El-4-y-5.mp3?rlkey=9nujo8185zvsqe5ms0jblpsch&st=bzhcgtuc&dl=1",
+        "https://www.dropbox.com/scl/fi/wckma6hli3p11kt2jwcrx/04-La-Sonora-Mazur-n-La-Sonora-Mazur-n-Zambito-rumbero.mp3?rlkey=uvl9ct3hy9zy6169sqmb73x94&st=8getjom7&dl=1",
+        "https://www.dropbox.com/scl/fi/12xu3i58a5ktrfsnwxsp2/01-La-Sonora-Mazur-n-Intro.mp3?rlkey=wqsps0meesl1htq3qy81k9o53&st=w8i2w4vj&dl=1",
+        "https://www.dropbox.com/scl/fi/ohyuxq20qyt7lnchifs60/02-La-Sonora-Mazur-n-Tiro-al-blanco.mp3?rlkey=ynwajzka8wu75zi4sgy6doljp&st=7t3fjr4o&dl=1",
+        "https://www.dropbox.com/scl/fi/tby5zocqvmi33m9f87ku4/08-La-Sonora-Mazur-n-Todos-Juntos.mp3?rlkey=ir10nki5v1z5479b7r6psqvbx&st=1iihwzid&dl=1",
+        "https://www.dropbox.com/scl/fi/ivu7ekveazjemcq24i6op/06-La-Sonora-Mazur-n-La-Sonora-Mazur-n-Vida-m-a-coraz-n.mp3?rlkey=cvgyfcowesqvbxrrvojh11a32&st=eteqtv0a&dl=1",
+    ],
+    [
+        "https://www.dropbox.com/scl/fi/z7ccsmtch8r4wnvx4suvz/maratonicosandungonvol1.jpg?rlkey=qxak84a9lt4cb65iw6jbe0kog&st=30gwf0yj&dl=1",
+        "https://www.dropbox.com/scl/fi/z7ccsmtch8r4wnvx4suvz/maratonicosandungonvol1.jpg?rlkey=qxak84a9lt4cb65iw6jbe0kog&st=30gwf0yj&dl=1",
+        "https://www.dropbox.com/scl/fi/z7ccsmtch8r4wnvx4suvz/maratonicosandungonvol1.jpg?rlkey=qxak84a9lt4cb65iw6jbe0kog&st=30gwf0yj&dl=1",
+        "https://www.dropbox.com/scl/fi/z7ccsmtch8r4wnvx4suvz/maratonicosandungonvol1.jpg?rlkey=qxak84a9lt4cb65iw6jbe0kog&st=30gwf0yj&dl=1",
+        "https://www.dropbox.com/scl/fi/z7ccsmtch8r4wnvx4suvz/maratonicosandungonvol1.jpg?rlkey=qxak84a9lt4cb65iw6jbe0kog&st=30gwf0yj&dl=1",
+        "https://www.dropbox.com/scl/fi/z7ccsmtch8r4wnvx4suvz/maratonicosandungonvol1.jpg?rlkey=qxak84a9lt4cb65iw6jbe0kog&st=30gwf0yj&dl=1",
+        "https://www.dropbox.com/scl/fi/z7ccsmtch8r4wnvx4suvz/maratonicosandungonvol1.jpg?rlkey=qxak84a9lt4cb65iw6jbe0kog&st=30gwf0yj&dl=1",
+        "https://www.dropbox.com/scl/fi/z7ccsmtch8r4wnvx4suvz/maratonicosandungonvol1.jpg?rlkey=qxak84a9lt4cb65iw6jbe0kog&st=30gwf0yj&dl=1",
+        "https://www.dropbox.com/scl/fi/z7ccsmtch8r4wnvx4suvz/maratonicosandungonvol1.jpg?rlkey=qxak84a9lt4cb65iw6jbe0kog&st=30gwf0yj&dl=1",
+    ],
+]
+
+// Disco 8
+
 //
 
 
