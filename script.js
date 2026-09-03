@@ -59,7 +59,7 @@ function functionNext(){
 
    function BluesFunction(){
   
-          randomScript = Math.floor(Math.random()*4);
+          randomScript = Math.floor(Math.random()*5);
 
           
           if(randomScript==0)
@@ -146,6 +146,24 @@ function functionNext(){
                     priceDesc.innerHTML = jambuAmazonia[0][randomNumber];
                     Portada.src = jambuAmazonia[2][randomNumber];
           
+                  }
+
+            if(randomScript==4)
+                  {
+                            randomNumber = Math.floor(Math.random()*maratonico[0].length);
+                            navigator.mediaSession.metadata = new MediaMetadata({
+                            title: maratonico[0][randomNumber],
+                            artist: "Nervous Wreck Radio - World",
+                            album: "",
+                            artwork: [{ src: maratonico[2][randomNumber] }],
+                            
+                  });
+                            audioElement.src= maratonico[1][randomNumber];
+                            audioElement.play();
+                            document.title = maratonico[0][randomNumber];
+                            priceDesc.innerHTML = maratonico[0][randomNumber];
+                            Portada.src = maratonico[2][randomNumber];
+                  
                   }
   
             
