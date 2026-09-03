@@ -8,6 +8,8 @@ let randomScript = 0;
 let randomNumber = 0;
 let musicBego = false;
 let kaaosBoolean = false;
+let Portada = document.getElementById("portada");
+let priceDesc = document.getElementById('price');
 
 function functionNext(){
   if(musicBego==false){
@@ -75,8 +77,8 @@ function functionNext(){
                     audioElement.src= worldHour[1][randomNumber];
                     audioElement.play();
                     document.title = worldHour[0][randomNumber];
-                    //priceDesc.innerHTML = worldHour[0][randomNumber];
-                    //Portada.src = worldHour[2][randomNumber];
+                    priceDesc.innerHTML = worldHour[0][randomNumber];
+                    Portada.src = worldHour[2][randomNumber];
           
                     
           
@@ -99,8 +101,8 @@ function functionNext(){
                      audioElement.src= dancingDevilsDjibuti[1][randomNumber];
                      audioElement.play();
                      document.title = dancingDevilsDjibuti[0][randomNumber];
-                    // priceDesc.innerHTML = dancingDevilsDjibuti[0][randomNumber];
-                    // Portada.src = dancingDevilsDjibuti[2][randomNumber];
+                     priceDesc.innerHTML = dancingDevilsDjibuti[0][randomNumber];
+                     Portada.src = dancingDevilsDjibuti[2][randomNumber];
                     // nota.innerHTML = "9 / 10";
                      
            
@@ -123,8 +125,8 @@ function functionNext(){
             audioElement.src= arrayTitle[1][randomNumber];
             audioElement.play();
             document.title = arrayTitle[0][randomNumber];
-            //priceDesc.innerHTML = arrayTitle[0][randomNumber];
-            //Portada.src = stringReplaceImage;
+            priceDesc.innerHTML = arrayTitle[0][randomNumber];
+            Portada.src =  arrayTitle[2][randomNumber];
   
           }
 
@@ -141,8 +143,8 @@ function functionNext(){
                     audioElement.src= jambuAmazonia[1][randomNumber];
                     audioElement.play();
                     document.title = jambuAmazonia[0][randomNumber];
-                    //priceDesc.innerHTML = jambuAmazonia[0][randomNumber];
-                    //Portada.src = stringReplaceImage;
+                    priceDesc.innerHTML = jambuAmazonia[0][randomNumber];
+                    Portada.src = jambuAmazonia[2][randomNumber];
           
                   }
   
@@ -420,5 +422,9 @@ function functionNext(){
             "sftp://su35864@access-5018990099.webspace-host.com/Web/Img/jambuAmazonia.jpg",
         ],
 ];
+
+//Disco7
+
+//
 
 
