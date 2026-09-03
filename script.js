@@ -1,12 +1,59 @@
 
-document.getElementById("next").onclick = function() {  BluesFunction(); };  
+document.getElementById("next").onclick = function() {  functionNext(); };  
 
 const audioElement = document.querySelector("audio");
 var song = document.getElementById("myAudio");
 let arrayTitle =[[],[],[]];
 let randomScript = 0;
 let randomNumber = 0;
+let musicBego = false;
+let kaaosBoolean = false;
 
+function functionNext(){
+  if(musicBego==false){
+    if(kaaosBoolean==true){parrillaKM();}
+    if(kaaosBoolean==false){parrilla();}
+  }
+  if(musicBego==true){parrillaBego();}
+  
+
+  if ("mediaSession" in navigator) {
+       navigator.mediaSession.setActionHandler("nexttrack", () => {
+
+        if(musicBego==false){
+          if(kaaosBoolean==true){parrillaKM();}
+          if(kaaosBoolean==false){parrilla();}
+        }
+        if(musicBego==true){parrillaBego();}
+  
+  });
+  }
+
+  audioElement.addEventListener(
+        "ended",
+        () => 
+      {
+        if(musicBego==false){
+          if(kaaosBoolean==true){parrillaKM();}
+          if(kaaosBoolean==false){parrilla();}
+        }
+        if(musicBego==true){parrillaBego();}
+        
+      
+      },
+        
+      );
+
+
+ }
+
+  function parrilla(){};
+  function parrillaKM(){};
+  function parrillaBego(){};
+
+  function parrilla(){
+    BluesFunction();
+  };
 
 
    function BluesFunction(){
