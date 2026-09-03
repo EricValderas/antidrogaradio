@@ -1,4 +1,5 @@
 
+document.getElementById("next").onclick = function() {  BluesFunction(); };  
 
 const audioElement = document.querySelector("audio");
 var song = document.getElementById("myAudio");
@@ -7,27 +8,6 @@ let randomScript = 0;
 let randomNumber = 0;
 
 
-  function togglePlay() {
-
-    audioElement.addEventListener(
-        "ended",
-        () => 
-      {
-        BluesFunction();
-      
-      },
-        
-      );
-
-
-    if (song.paused) {
-      BluesFunction();
-    } else {
-      song.pause();
-    }
-  }
-
-  
 
    function BluesFunction(){
   
@@ -224,11 +204,11 @@ let randomNumber = 0;
         "https://www.dropbox.com/scl/fi/0bz07tpz0qzvcwv95bbqm/09-minyo-crusaders-Aizu-Bandaisan-Latin.mp3?rlkey=gxdsn6r26hx483h6l9kuuut04&st=nqpo2wf5&dl=1",
         "https://www.dropbox.com/scl/fi/p8i9ox6ymmgnm97zopon1/10-minyo-crusaders-Sumo-Jinku-A-capella.mp3?rlkey=7fwzeakoqdjg0wexgdoep6ej2&st=velrsm4i&dl=1",
 
-        "https://nervouswreckradio.online/P/%C2%A1Dale%20Duro%20al%20Bombo%21%20-%20%20Ruca%20%26%20El%20Quinde%20de%20Barbacoas/BandCampDownloader.app%20-%20A%20ritmo%20de%20caramba%20-%20Ruca%20_%20El%20Quinde%20de%20Barbacoas.mp3",
-        "https://nervouswreckradio.online/P/%C2%A1Dale%20Duro%20al%20Bombo%21%20-%20%20Ruca%20%26%20El%20Quinde%20de%20Barbacoas/BandCampDownloader.app%20-%20Africa%20negra%20-%20Ruca%20_%20El%20Quinde%20de%20Barbacoas.mp3",
-        "https://nervouswreckradio.online/P/%C2%A1Dale%20Duro%20al%20Bombo%21%20-%20%20Ruca%20%26%20El%20Quinde%20de%20Barbacoas/BandCampDownloader.app%20-%20Ala%C3%A9%20ala%C3%A1%20-%20Ruca%20_%20El%20Quinde%20de%20Barbacoas.mp3",
-        "https://nervouswreckradio.online/P/%C2%A1Dale%20Duro%20al%20Bombo%21%20-%20%20Ruca%20%26%20El%20Quinde%20de%20Barbacoas/BandCampDownloader.app%20-%20Atochita%20-%20Ruca%20_%20El%20Quinde%20de%20Barbacoas.mp3",
-        "https://nervouswreckradio.online/P/%C2%A1Dale%20Duro%20al%20Bombo%21%20-%20%20Ruca%20%26%20El%20Quinde%20de%20Barbacoas/BandCampDownloader.app%20-%20Dale%20duro%20al%20bombo%20-%20Ruca%20_%20El%20Quinde%20de%20Barbacoas.mp3",
+        "https://www.dropbox.com/scl/fi/jpapasmf58rgkl093k902/BandCampDownloader.app-A-ritmo-de-caramba-Ruca-_-El-Quinde-de-Barbacoas.mp3?rlkey=3763cgitpb2ka9hb2puvy7aaq&st=0edvnqv2&dl=1",
+        "https://www.dropbox.com/scl/fi/v10i9bv6fp9flakafclnt/BandCampDownloader.app-Africa-negra-Ruca-_-El-Quinde-de-Barbacoas.mp3?rlkey=6ktxjt9uq3e5wgil7pq6upo72&st=0439ivcj&dl=1",
+        "https://www.dropbox.com/scl/fi/vju0u18s4daqquxx01c3m/BandCampDownloader.app-Ala-ala-Ruca-_-El-Quinde-de-Barbacoas.mp3?rlkey=m9sj0jdu7twc8v0mm3t5299kv&st=8iwhjqn9&dl=1",
+        "https://www.dropbox.com/scl/fi/jsb6sq2p29il6nlc0xx20/BandCampDownloader.app-Atochita-Ruca-_-El-Quinde-de-Barbacoas.mp3?rlkey=00qc7xxu9bgmprjh269mwpjc1&st=xw5cmgjk&dl=1",
+        "https://www.dropbox.com/scl/fi/mpcam0b6tma6njkah2fhi/BandCampDownloader.app-Dale-duro-al-bombo-Ruca-_-El-Quinde-de-Barbacoas.mp3?rlkey=0gmjhv9fbgsqloc53glwa0zat&st=vc7wm7x5&dl=1",
         "https://nervouswreckradio.online/P/%C2%A1Dale%20Duro%20al%20Bombo%21%20-%20%20Ruca%20%26%20El%20Quinde%20de%20Barbacoas/BandCampDownloader.app%20-%20El%20agua%20turbia%20-%20Ruca%20_%20El%20Quinde%20de%20Barbacoas.mp3",
         "https://nervouswreckradio.online/P/%C2%A1Dale%20Duro%20al%20Bombo%21%20-%20%20Ruca%20%26%20El%20Quinde%20de%20Barbacoas/BandCampDownloader.app%20-%20El%20clavito%20de%20Pablito%20-%20Ruca%20_%20El%20Quinde%20de%20Barbacoas.mp3",
         "https://nervouswreckradio.online/P/%C2%A1Dale%20Duro%20al%20Bombo%21%20-%20%20Ruca%20%26%20El%20Quinde%20de%20Barbacoas/BandCampDownloader.app%20-%20El%20irag%C3%BCilde%20-%20Ruca%20_%20El%20Quinde%20de%20Barbacoas.mp3",
