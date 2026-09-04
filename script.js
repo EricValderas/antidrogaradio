@@ -59,7 +59,7 @@ function functionNext(){
 
    function BluesFunction(){
   
-          randomScript = Math.floor(Math.random()*5);
+          randomScript = Math.floor(Math.random()*6);
 
           
           if(randomScript==0)
@@ -165,6 +165,25 @@ function functionNext(){
                             Portada.src = maratonico[2][randomNumber];
                   
                   }
+
+           if(randomScript==5)
+                  {
+                    arrayTitle=lovarititirobin;
+                    randomNumber = Math.floor(Math.random()*arrayTitle[0].length);
+                    navigator.mediaSession.metadata = new MediaMetadata({
+                    title: arrayTitle[0][randomNumber],
+                    artist: "Nervous Wreck Radio - World",
+                    album: "",
+                    artwork: [{ src: arrayTitle[2][randomNumber] }],  
+                  });
+          
+                    audioElement.src= arrayTitle[1][randomNumber];
+                    audioElement.play();
+                    document.title = arrayTitle[0][randomNumber];
+                    priceDesc.innerHTML = arrayTitle[0][randomNumber];
+                    Portada.src = arrayTitle[2][randomNumber];
+          
+                  }
   
             
         }
@@ -193,7 +212,7 @@ function functionNext(){
           "https://www.dropbox.com/scl/fi/ulrbgxz2ov23d0dgywqcg/eco-de-tambores.mp3?rlkey=oz6ldqg1m87ep1nmymz7k85k0&st=2dx3znv2&dl=1",
           "https://www.dropbox.com/scl/fi/22a3j2yie018ow9g5wgxh/el-vaquero.mp3?rlkey=3c90kn5awaa7rmnsw3ty5xhmb&st=f8yh7l3q&dl=1",
           "https://www.dropbox.com/scl/fi/nnf1vhekrncuf0kd30zts/festival-en-guarare.mp3?rlkey=bduqe1q9ihskzringq8fhgvge&st=1iupdnkz&dl=1",
-          "https://www.dropbox.com/scl/fi/icpgwlmma0zwxg36kvx9f/lamento-de-sirena.mp3?rlkey=oq93z3jlc2j6f4d5f24wvse9y&st=920tlk0s&dl=0",
+          "https://www.dropbox.com/scl/fi/icpgwlmma0zwxg36kvx9f/lamento-de-sirena.mp3?rlkey=oq93z3jlc2j6f4d5f24wvse9y&st=920tlk0s&dl=1",
           "shttps://www.dropbox.com/scl/fi/tg5wns763gc17kku7csbj/las-polleras.mp3?rlkey=tg41gfk3lbpg9y4do1u9sb447&st=ssjubmol&dl=1",
           "https://www.dropbox.com/scl/fi/35ctg9mkflz4bnf8ygp3d/me-quiebro-me-desbarato.mp3?rlkey=83gj22vpn97rnglhfout8i6k4&st=0sjtxe7o&dl=1",
           "https://www.dropbox.com/scl/fi/wfjlvx86pj6oa9n6bg43x/me-siento-desbaratar.mp3?rlkey=5pt6tm4vnssb5cg5gdred2vzx&st=gnggojbq&dl=1",
@@ -485,6 +504,51 @@ const maratonico = [
 ]
 
 // Disco 8
+
+const lovarititirobin = [
+        [
+         "Jarna - Titi Robin",
+         "Kicsi Kicsi Kém - Titi Robin",
+         "L'aube Impatiente - Titi Robin",
+         "La petite mer - Titi Robin",
+         "Lovari - Titi Robin",
+         "Ma Gavali Rumba - Titi Robin",
+         "Mehdi - Titi Robin",
+         "Memed Ve Seyrane - Titi Robin",
+         "Sandhya - Titi Robin",
+         
+         
+        
+        ],
+        [
+          "https://www.dropbox.com/scl/fi/xbmxijqe2nuybbjx5hqkw/08-Titi-Robin-Jarna.mp3?rlkey=3e4miwwl6du6qxdkztcazr427&st=6d8fmp9m&dl=1",
+          "https://www.dropbox.com/scl/fi/m3d7y6w7mnzclhjqemxya/04-Titi-Robin-Kicsi-Kicsi-K-m-Nu-No.-1.mp3?rlkey=8xa8vyfkig2pmkrlki54c6gk2&st=dhmou0cb&dl=1",
+          "https://www.dropbox.com/scl/fi/oodu04e9jgrxyq85gf02j/01-Titi-Robin-L-aube-Impatiente.mp3?rlkey=3k5su3r1i8of1ypkpkmv9n4rg&st=gk0mwlkf&dl=1",
+          "https://www.dropbox.com/scl/fi/s8i02uhozshhk8nvbyt38/05-Titi-Robin-La-Petite-Mer.mp3?rlkey=2vb4ygf8n3vxeplq8sw0n9r3z&st=95gyltnr&dl=1",
+          "https://www.dropbox.com/scl/fi/d46r9s3toqw5510z5g4zt/03-Titi-Robin-Lovari.mp3?rlkey=tx8ltj5lahfnofkcn9arund88&st=gijb45mg&dl=1",
+          "https://www.dropbox.com/scl/fi/8mhf97tt36012oactlk7d/06-Titi-Robin-Ma-Gavali-Rumba.mp3?rlkey=kco1k1th9puyhh0et4xk6v21p&st=r95szvd6&dl=1",
+          "https://www.dropbox.com/scl/fi/q77yf8c41clwves7vb4c5/02-Titi-Robin-Mehdi.mp3?rlkey=5b4oxg8qn4ezx9me77slylgzd&st=qr8qmc14&dl=1",
+          "https://www.dropbox.com/scl/fi/tktvbr9ul6822wz5kg7k5/07-Titi-Robin-Memed-Ve-Seyrane.mp3?rlkey=sc0jvnnprv1eo4oxv6t8yrys5&st=0gab8gf3&dl=1",
+          "https://www.dropbox.com/scl/fi/nqo11zb3ij8vo9if68fpt/09-Titi-Robin-Sandhya.mp3?rlkey=e7brtzi89kj03ox6j6afwknim&st=8zeinyk8&dl=1",
+          
+        ],
+        [
+
+        "https://www.dropbox.com/scl/fi/ijj81yu5uupib16y6zpqf/lovarititirobin.jpg?rlkey=45l1gtawf9oh2i71mbww6llcw&st=t7ut07cd&dl=1",
+        "https://www.dropbox.com/scl/fi/ijj81yu5uupib16y6zpqf/lovarititirobin.jpg?rlkey=45l1gtawf9oh2i71mbww6llcw&st=t7ut07cd&dl=1",
+        "https://www.dropbox.com/scl/fi/ijj81yu5uupib16y6zpqf/lovarititirobin.jpg?rlkey=45l1gtawf9oh2i71mbww6llcw&st=t7ut07cd&dl=1",
+        "https://www.dropbox.com/scl/fi/ijj81yu5uupib16y6zpqf/lovarititirobin.jpg?rlkey=45l1gtawf9oh2i71mbww6llcw&st=t7ut07cd&dl=1",
+        "https://www.dropbox.com/scl/fi/ijj81yu5uupib16y6zpqf/lovarititirobin.jpg?rlkey=45l1gtawf9oh2i71mbww6llcw&st=t7ut07cd&dl=1",
+        "https://www.dropbox.com/scl/fi/ijj81yu5uupib16y6zpqf/lovarititirobin.jpg?rlkey=45l1gtawf9oh2i71mbww6llcw&st=t7ut07cd&dl=1",
+        "https://www.dropbox.com/scl/fi/ijj81yu5uupib16y6zpqf/lovarititirobin.jpg?rlkey=45l1gtawf9oh2i71mbww6llcw&st=t7ut07cd&dl=1",
+        "https://www.dropbox.com/scl/fi/ijj81yu5uupib16y6zpqf/lovarititirobin.jpg?rlkey=45l1gtawf9oh2i71mbww6llcw&st=t7ut07cd&dl=1",
+        "https://www.dropbox.com/scl/fi/ijj81yu5uupib16y6zpqf/lovarititirobin.jpg?rlkey=45l1gtawf9oh2i71mbww6llcw&st=t7ut07cd&dl=1",
+    
+      ] 
+      ];
+
+
+//Disco 9
 
 //
 
