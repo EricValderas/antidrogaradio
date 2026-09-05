@@ -59,7 +59,7 @@ function functionNext(){
 
    function BluesFunction(){
   
-          randomScript = Math.floor(Math.random()*6);
+          randomScript = Math.floor(Math.random()*7);
 
           
           if(randomScript==0)
@@ -169,6 +169,25 @@ function functionNext(){
            if(randomScript==5)
                   {
                     arrayTitle=lovarititirobin;
+                    randomNumber = Math.floor(Math.random()*arrayTitle[0].length);
+                    navigator.mediaSession.metadata = new MediaMetadata({
+                    title: arrayTitle[0][randomNumber],
+                    artist: "Nervous Wreck Radio - World",
+                    album: "",
+                    artwork: [{ src: arrayTitle[2][randomNumber] }],  
+                  });
+          
+                    audioElement.src= arrayTitle[1][randomNumber];
+                    audioElement.play();
+                    document.title = arrayTitle[0][randomNumber];
+                    priceDesc.innerHTML = arrayTitle[0][randomNumber];
+                    Portada.src = arrayTitle[2][randomNumber];
+          
+                  }
+
+          if(randomScript==6)
+                  {
+                    arrayTitle=cumbiadejuventud;
                     randomNumber = Math.floor(Math.random()*arrayTitle[0].length);
                     navigator.mediaSession.metadata = new MediaMetadata({
                     title: arrayTitle[0][randomNumber],
@@ -549,6 +568,57 @@ const lovarititirobin = [
 
 
 //Disco 9
+
+      const cumbiadejuventud = [
+    [
+        "A volar moscas - Los Golden Boys",
+        "Cumbia de juventud - Los Golden Boys",
+        "Cumbia y beso - Los Golden Boys",
+        "El año viejo - Los Golden Boys",
+        "El buena vida - Los Golden Boys",
+        "El elevao - Los Golden Boys",
+        "La cumbia de la marihuana - Los Golden Boys",
+        "La luna y la playa - Los Golden Boys",
+        "Las colombianas - Los Golden Boys",
+        "Si me quieres - Los Golden Boys",
+        "Sonrieme - Los Golden Boys",
+        "Vengan a baila - Los Golden Boys",
+        
+       
+    ],
+    [
+        "https://www.dropbox.com/scl/fi/06vov200tkh1f20eh6w0x/a-volar-moscas.mp3?rlkey=81e9xbu1icadlhp8wi8ed4kes&st=rut2ej2y&dl=1",
+        "https://www.dropbox.com/scl/fi/ai5ah1ys7vd7fk7wtvox3/cumbia-de-juventud.mp3?rlkey=8p3vsk98mwm80g791se0cwfof&st=4qmficoe&dl=1",
+        "https://www.dropbox.com/scl/fi/jd1djrh8744rwrzesi62i/cumbia-y-beso.mp3?rlkey=6wlzi734rs2cr2129fph9u5xu&st=oaqo8qq5&dl=1",
+        "https://www.dropbox.com/scl/fi/tclrfnrrq1vt7u82ckt50/el-a-o-viejo.mp3?rlkey=nlrx05vcyk61s4y7b6z06quya&st=zwcg1q7e&dl=1",
+        "https://www.dropbox.com/scl/fi/qz74hn44uclclq5jsb2dt/el-buena-vida.mp3?rlkey=7toc74vn25deefvk5ehh5c9q6&st=o042gyn7&dl=1",
+        "https://www.dropbox.com/scl/fi/2o8nte8hlzyun6hf941bu/el-elevao.mp3?rlkey=cd19i9ho9pkpkw7lnibg8lcon&st=69109tru&dl=1",
+        "https://www.dropbox.com/scl/fi/thass3zhnhfawuwlydli2/la-cumbia-de-la-mariguana.mp3?rlkey=2xbc7pv2uf8y8y30prpkk7bzs&st=ug35odnp&dl=1",
+        "https://www.dropbox.com/scl/fi/r9b50wzcem535aiddcc2h/la-luna-y-la-playa.mp3?rlkey=jwu2wq089vktxqpx9wov0y6ni&st=3bqzbf0q&dl=1",
+        "https://www.dropbox.com/scl/fi/8bu5hhbez298xmie9fz1h/los-colombianas.mp3?rlkey=dgjnrso7d39ropsgolu95pxe4&st=297mf4js&dl=1",
+        "https://www.dropbox.com/scl/fi/78rzfx2tv319g9qkctjfx/si-me-quieres.mp3?rlkey=2tntsm97mh5xfkjeo659mw7y7&st=l4u36vm5&dl=1",
+        "https://www.dropbox.com/scl/fi/dru28l1jb8vudsze7m1vj/sonrieme.mp3?rlkey=rfehdxr5inmllgcefw7j1ezo3&st=z36dan8t&dl=1",
+        "https://www.dropbox.com/scl/fi/yzemuoy4gqoyc6ser1xh7/vengan-a-baila.mp3?rlkey=bzsrj5v6bk2t7jtujz74j34qf&st=855jmf0h&dl=1",
+    ],  
+    [
+      "https://www.dropbox.com/scl/fi/folurffff3i3vtyhh0oas/cumbiadejuventud.jpg?rlkey=9j4sj51o6mqw0fquvhmcgrpj1&st=o26fijaf&dl=1",
+      "https://www.dropbox.com/scl/fi/folurffff3i3vtyhh0oas/cumbiadejuventud.jpg?rlkey=9j4sj51o6mqw0fquvhmcgrpj1&st=o26fijaf&dl=1",
+      "https://www.dropbox.com/scl/fi/folurffff3i3vtyhh0oas/cumbiadejuventud.jpg?rlkey=9j4sj51o6mqw0fquvhmcgrpj1&st=o26fijaf&dl=1",
+      "https://www.dropbox.com/scl/fi/folurffff3i3vtyhh0oas/cumbiadejuventud.jpg?rlkey=9j4sj51o6mqw0fquvhmcgrpj1&st=o26fijaf&dl=1",
+      "https://www.dropbox.com/scl/fi/folurffff3i3vtyhh0oas/cumbiadejuventud.jpg?rlkey=9j4sj51o6mqw0fquvhmcgrpj1&st=o26fijaf&dl=1",
+
+      "https://www.dropbox.com/scl/fi/folurffff3i3vtyhh0oas/cumbiadejuventud.jpg?rlkey=9j4sj51o6mqw0fquvhmcgrpj1&st=o26fijaf&dl=1",
+      "https://www.dropbox.com/scl/fi/folurffff3i3vtyhh0oas/cumbiadejuventud.jpg?rlkey=9j4sj51o6mqw0fquvhmcgrpj1&st=o26fijaf&dl=1",
+      "https://www.dropbox.com/scl/fi/folurffff3i3vtyhh0oas/cumbiadejuventud.jpg?rlkey=9j4sj51o6mqw0fquvhmcgrpj1&st=o26fijaf&dl=1",
+      "https://www.dropbox.com/scl/fi/folurffff3i3vtyhh0oas/cumbiadejuventud.jpg?rlkey=9j4sj51o6mqw0fquvhmcgrpj1&st=o26fijaf&dl=1",
+      "https://www.dropbox.com/scl/fi/folurffff3i3vtyhh0oas/cumbiadejuventud.jpg?rlkey=9j4sj51o6mqw0fquvhmcgrpj1&st=o26fijaf&dl=1",
+
+      "https://www.dropbox.com/scl/fi/folurffff3i3vtyhh0oas/cumbiadejuventud.jpg?rlkey=9j4sj51o6mqw0fquvhmcgrpj1&st=o26fijaf&dl=1",
+      "https://www.dropbox.com/scl/fi/folurffff3i3vtyhh0oas/cumbiadejuventud.jpg?rlkey=9j4sj51o6mqw0fquvhmcgrpj1&st=o26fijaf&dl=1",
+    ]
+];
+
+// Disco 10
 
 //
 
